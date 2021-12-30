@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Overlay, ModalContainer } from "./Modal.styled";
+import PropTypes from "prop-types";
 
 export class Modal extends Component {
   componentDidMount() {
@@ -27,5 +28,11 @@ export class Modal extends Component {
     );
   }
 }
+
+Modal.propTypes = {
+  onEsc: PropTypes.func,
+  bigImage: PropTypes.string.isRequired,
+  alt: PropTypes.string,
+};
 
 export default Modal;

@@ -7,6 +7,7 @@ import {
   ButtonLabel,
   SeacrhInput,
 } from "./Searchbar.styled";
+import PropTypes from "prop-types";
 
 function Searchbar({ onSumbit }) {
   return (
@@ -28,5 +29,9 @@ function Searchbar({ onSumbit }) {
     </HeaderSearchbar>
   );
 }
+
+Searchbar.propTypes = {
+  onSumbit: PropTypes.func,
+};
 
 export default Searchbar;
