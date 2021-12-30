@@ -5,7 +5,11 @@ import { LoaderContainer } from "./Loader.styled";
 function Loader() {
   return (
     <LoaderContainer>
-      <TailSpin type="TailSpin" arialLabel="loading-indicator" />
+      <TailSpin
+        type="TailSpin"
+        arialLabel="loading-indicator"
+        color="#3f51b5"
+      />
     </LoaderContainer>
   );
 }
